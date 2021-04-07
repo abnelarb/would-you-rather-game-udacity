@@ -7,8 +7,7 @@
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Support](#support)
-- [Contributing](#contributing)
+
 
 ## Installation
 git a clone of the project on your local machine 
@@ -28,4 +27,6 @@ the app will be running on http://localhost:3000
 - Setup the starter code after clone it from udacity repo https://github.com/udacity/reactnd-project-would-you-rather-starter
 - setup the project using 
 $npx-react-app would-you-rather
-will be added later after planning the project
+will be added later after planning the project.
+- added bootstrap framework to style the app .
+- setup base actions, reducers and middleware also installed required packages and get the intial data from database then log it to the console by the logger middleware . 

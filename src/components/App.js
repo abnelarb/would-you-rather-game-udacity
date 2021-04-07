@@ -1,23 +1,38 @@
 import '../App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Login from './Login'
+import Navbar from "./Navbar";
+import { handleInitialData } from '../actions/shared'
+import React, { Component } from 'react';
+import LoadingBar from 'react-redux-loading'
+import { connect } from 'react-redux'
+class App extends Component {
+  componentDidMount() {
+    this.props.dispatch(handleInitialData())
+    console.log(this.props)
+  }
+  render() {
+    return (
+      <Router>
+        <LoadingBar />
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <div className="container">
+          <Navbar />
+          {this.props.loading === true
+            ? null
+            : <div>
+              <Login />
+            </div>
+          }
+        </div>
+      </Router>
+
+    );
+  }
 }
-
-export default App;
+function mapStateToProps({ authedUser }) {
+  return {
+    loading: authedUser === null
+  }
+}
+export default connect (mapStateToProps)(App);
