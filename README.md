@@ -6,7 +6,7 @@
 ## Table of Contents
 
 - [Installation](#installation)
-- [What You're Getting](#What You're Getting)
+- [What_You_Are_Getting](#What You're Getting)
 - [Walkthrough](#Walkthorugh)
 
 
@@ -19,7 +19,7 @@ yarn install
 yarn start
 ```
 the app will be running on http://localhost:3000
-## What You're Getting
+## What_You_Are_Getting
 ```bash
 ├── CONTRIBUTING.md
 ├── README.md - This file.
@@ -100,3 +100,4 @@ $npx-react-app would-you-rather
 
 ## Demo
 - you can test the app at 
+https://pi293.csb.app/
