@@ -1,3 +1,4 @@
+/* the application using to different styles this css styles and bootstrap style  */
 .App {
   text-align: center;
 }
@@ -47,6 +48,206 @@
 
   .Login form {
     margin: 0 auto;
-    max-width: 460px;
+    max-width: 680px;
+    background-image: url('http://www.votemeyo.com/Images/Content/26_6_2014_4_22_34_407.jpg?w=300&h=200');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    min-height: 380px;
+      
   }
+}
+.footer{
+  margin-top: .25rem;
+  padding: .25rem;
+  background-color: #007bff;
+  color:#eee;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.avatar {
+  vertical-align: middle;
+  width: 150px;
+  height: 170px;
+  border-radius: 50%;
+  left:50%
+}
+.result-container .user-container {
+  position: relative;
+}
+.vote{
+  position: absolute;
+  top: -10px; 
+  right: -10px;
+}
+.ask{
+  position: absolute;
+  top: 0; 
+  right: 0;
+}
+.centered {
+  height: 10vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mynav {
+  list-style-type: none!important;
+  margin: 0!important;
+  padding: 0!important;
+  overflow: hidden!important;
+  background-color: #007bff!important;
+}
+
+.mynav {
+  float: left!important;
+}
+
+.mynav a {
+  display: block!important;
+  color: white!important;
+  text-align: center!important;
+  padding: 14px 16px!important;
+  text-decoration: none!important;
+}
+.h6 {
+  color:#eee;
+  height: 5vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Change the link color to #111 (black) on hover */
+.mynav a:hover {
+  background-color: #111!important;
+}
+.mynav a:hover:not(.active) {
+  background-color: #111!important;
+}
+active {
+  background-color: #007bff!important;
+}
+.nav-ele {
+  display: none!important;
+  visibility: hidden ;
+  background-color:#4CAF50
+}
+
+
+
+body {
+	background: #fafafa;
+	color: #444;
+	font: 100%/30px 'Helvetica Neue', helvetica, arial, sans-serif;
+	text-shadow: 0 1px 0 #fff;
+}
+
+strong {
+	font-weight: bold; 
+}
+
+em {
+	font-style: italic; 
+}
+
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 30px auto;
+	text-align: left;
+	width: 800px;
+}	
+
+th {
+	background:  linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+
+
+tr:nth-child(odd) td {
+	background: #f1f1f1 
+}
+
+tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+tbody:hover td {
+	color: transparent;
+	text-shadow: 0 0 3px #aaa;
+}
+
+tbody:hover tr:hover td {
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+}
+.img-avatar {
+  width: 50px;
+  height: 50 px;
+  border-radius: 50%;
 }

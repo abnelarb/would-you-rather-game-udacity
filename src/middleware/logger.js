@@ -1,3 +1,4 @@
+//the logger function and it takes 3 functions the store and the next action and the action
 const logger = (store) => (next) => (action) => {
     console.group(action.type)
     console.log("The Action :", action)

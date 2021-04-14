@@ -1,3 +1,4 @@
+//the compine reducers function 
 import { combineReducers } from 'redux'
 import { loadingBarReducer } from 'react-redux-loading'
 import  questions  from '../reducers/questions'

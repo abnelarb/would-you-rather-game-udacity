@@ -1,8 +1,8 @@
 let users = {
-  sarahedo: {
-    id: 'sarahedo',
-    name: 'Sarah Edo',
-    avatarURL: "https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png",
+  mohammed: {
+    id: 'mohammed',
+    name: 'Mohammed Kamal',
+    avatarURL: "https://i.ibb.co/Yf7xhrp/38451467-10155652283769080-6142784319774523392-o.jpg",
     answers: {
       "8xf0y6ziyjabvozdd253nd": 'optionOne',
       "6ni6ok3ym7mf1p33lnez": 'optionTwo',
@@ -11,20 +11,20 @@ let users = {
     },
     questions: ['8xf0y6ziyjabvozdd253nd', 'am8ehyc8byjqgar0jgpub9']
   },
-  tylermcginnis: {
-    id: 'tylermcginnis',
-    name: 'Tyler McGinnis',
-    avatarURL: "https://banner2.cleanpng.com/20180920/yko/kisspng-computer-icons-portable-network-graphics-avatar-ic-5ba3c66df14d32.3051789815374598219884.jpg",
+  marwa: {
+    id: 'marwa',
+    name: 'Marwa Mahmoud',
+    avatarURL: "https://avatarfiles.alphacoders.com/147/thumb-1920-147699.jpg",
     answers: {
       "vthrdm985a262al8qx3do": 'optionOne',
       "xj352vofupe1dqz9emx13r": 'optionTwo',
     },
     questions: ['loxhs1bqm25b708cmbf3g', 'vthrdm985a262al8qx3do'],
   },
-  johndoe: {
-    id: 'johndoe',
-    name: 'John Doe',
-    avatarURL: "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png",
+  adam: {
+    id: 'adam',
+    name: 'Adam Mohammed',
+    avatarURL: "https://i.ibb.co/bQkJkM6/IMG-20201003-210505-647.jpg",
     answers: {
       "xj352vofupe1dqz9emx13r": 'optionOne',
       "vthrdm985a262al8qx3do": 'optionTwo',
@@ -37,80 +37,80 @@ let users = {
 let questions = {
   "8xf0y6ziyjabvozdd253nd": {
     id: '8xf0y6ziyjabvozdd253nd',
-    author: 'sarahedo',
+    author: 'mohammed',
     timestamp: 1467166872634,
     optionOne: {
-      votes: ['sarahedo'],
-      text: 'have horrible short term memory',
+      votes: ['mohammed'],
+      text: ' Lose the ability to read',
     },
     optionTwo: {
       votes: [],
-      text: 'have horrible long term memory'
+      text: ' Lose the ability to speak'
     }
   },
   "6ni6ok3ym7mf1p33lnez": {
     id: '6ni6ok3ym7mf1p33lnez',
-    author: 'johndoe',
+    author: 'adam',
     timestamp: 1468479767190,
     optionOne: {
       votes: [],
-      text: 'become a superhero',
+      text: 'Be in jail for a year',
     },
     optionTwo: {
-      votes: ['johndoe', 'sarahedo'],
-      text: 'become a supervillain'
+      votes: ['adam', 'mohammed'],
+      text: 'Lose a year off your life'
     }
   },
   "am8ehyc8byjqgar0jgpub9": {
     id: 'am8ehyc8byjqgar0jgpub9',
-    author: 'sarahedo',
+    author: 'mohammed',
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
-      text: 'be telekinetic',
+      text: 'Have one real get out of jail free card',
     },
     optionTwo: {
-      votes: ['sarahedo'],
-      text: 'be telepathic'
+      votes: ['mohammed'],
+      text: 'A Key that opens any door'
     }
   },
   "loxhs1bqm25b708cmbf3g": {
     id: 'loxhs1bqm25b708cmbf3g',
-    author: 'tylermcginnis',
+    author: 'marwa',
     timestamp: 1482579767190,
     optionOne: {
       votes: [],
-      text: 'be a front-end developer',
+      text: 'Give up all drinks except for water',
     },
     optionTwo: {
-      votes: ['sarahedo'],
-      text: 'be a back-end developer'
+      votes: ['mohammed'],
+      text: 'Give up eating anything that was cooked in an oven'
     }
   },
   "vthrdm985a262al8qx3do": {
     id: 'vthrdm985a262al8qx3do',
-    author: 'tylermcginnis',
+    author: 'marwa',
     timestamp: 1489579767190,
     optionOne: {
-      votes: ['tylermcginnis'],
-      text: 'find $50 yourself',
+      votes: ['marwa'],
+      text: 'Be able to see 10 minutes into your own future',
     },
     optionTwo: {
-      votes: ['johndoe'],
-      text: 'have your best friend find $500'
+      votes: ['adam'],
+      text: '10 minutes into the future of anyone but yourself'
     }
   },
   "xj352vofupe1dqz9emx13r": {
     id: 'xj352vofupe1dqz9emx13r',
-    author: 'johndoe',
+    author: 'adam',
     timestamp: 1493579767190,
     optionOne: {
-      votes: ['johndoe'],
-      text: 'write JavaScript',
+      votes: ['adam'],
+      text: 'Have an easy job working for someone else',
     },
     optionTwo: {
-      votes: ['tylermcginnis'],
-      text: 'write Swift'
+      votes: ['marwa'],
+      text: 'work for yourself but work incredibly hard'
     }
   },
 }
