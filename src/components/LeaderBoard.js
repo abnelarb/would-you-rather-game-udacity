@@ -8,7 +8,7 @@ import medal from '../images/medal.jpg'
 class LeaderBoardView extends Component {
     render() {
         //the users props to loop over it to get the statics to build the component 
-        const { users,authedUser } = this.props
+        const { users, authedUser } = this.props
         //the assignment of a trophies array to give the best 3 users golden,silver and bronze cup also there is a medal to users from 4 to 10
         let trophies = [gold, silver, bronze]
         for (let i = 0; i < 10; i++) {
@@ -16,7 +16,7 @@ class LeaderBoardView extends Component {
                 trophies[i] = medal;
             }
         }
-//the statics functions returns object with username,avatar,id , total questions ,total answers and the score for each user then sort it depending on score from top to least
+        //the statics functions returns object with username,avatar,id , total questions ,total answers and the score for each user then sort it depending on score from top to least
         const usersStatics = users.map(user => ({
             id: user.id,
             username: user.name,
@@ -27,7 +27,7 @@ class LeaderBoardView extends Component {
         }))
             .sort((a, b) => b.score - a.score)
 
-        console.log(this.props.authedUser)
+        //console.log(this.props.authedUser)
         //console.log("this statics ", usersStatics)
         return (
             <div className="string">
@@ -56,7 +56,7 @@ class LeaderBoardView extends Component {
                                 {usersStatics.map((user, trophie) => (
                                     <tr key={user.id}>
                                         <td ><strong><img src={user.useravatarURL} className="card-img avatar" alt={user.username} /></strong></td>
-                                        <td className="justify-content-center h5"><strong>{user.username} {(authedUser===user.id)&&<span style={{color:'blue'}}>(You)</span>}</strong></td>
+                                        <td className="justify-content-center h5"><strong>{user.username} {(authedUser === user.id) && <span style={{ color: 'blue' }}>(You)</span>}</strong></td>
                                         <td className="justify-content-center h5">{user.totalanswers}</td>
                                         <td className="justify-content-center h5"><strong>{user.totalquestions}</strong></td>
                                         <td className="justify-content-center h5"> <strong>{user.score}</strong></td>
@@ -78,7 +78,7 @@ class LeaderBoardView extends Component {
     }
 }
 //get the users from the state as props to build the component
-function mapStateToProps({ users,authedUser }) {
+function mapStateToProps({ users, authedUser }) {
     return {
         users: Object.values(users),
         authedUser
